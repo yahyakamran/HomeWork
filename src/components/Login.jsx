@@ -36,7 +36,7 @@ function login() {
           </InputRightElement>
         </InputGroup>
       </FormControl>
-      <Button colorScheme="blue" width={"100%"} style={{ marginTop: 15 }}>
+      <Button colorScheme="gray" width={"100%"} style={{ marginTop: 15 }}>
         Log In
       </Button>
     </VStack>

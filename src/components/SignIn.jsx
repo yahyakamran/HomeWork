@@ -57,7 +57,7 @@ function SignIn() {
         <FormLabel>Upload Your Picure</FormLabel>
         <Input type="file" accept="image/*" p={1.5}></Input>
       </FormControl>
-      <Button colorScheme="blue" width={"100%"} style={{ marginTop: 15 }}>
+      <Button colorScheme="gray" width={"100%"} style={{ marginTop: 15 }}>
         Sign Up
       </Button>
     </VStack>

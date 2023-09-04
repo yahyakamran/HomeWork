@@ -38,7 +38,7 @@ function LoginForm() {
         borderWidth={"1px"}
         color={"black"}
       >
-        <Tabs variant="line">
+        <Tabs variant="line" colorScheme="gray">
           <TabList>
             <Tab width={"50%"}>LogIn</Tab>
             <Tab width={"50%"}>Sign Up</Tab>
