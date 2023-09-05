@@ -9,7 +9,7 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import { useState } from "react";
-function SignIn() {
+function SignUp() {
   const [show, setShow] = useState();
 
   const handleClick = () => {
@@ -20,6 +20,10 @@ function SignIn() {
       <FormControl id="first-name" isRequired>
         <FormLabel>Name</FormLabel>
         <Input placeholder="Enter Your Name"></Input>
+      </FormControl>
+      <FormControl id="Roll-No" isRequired>
+        <FormLabel>Roll No.</FormLabel>
+        <Input placeholder="Enter Your Roll Number"></Input>
       </FormControl>
       <FormControl id="email" isRequired>
         <FormLabel>Email</FormLabel>
@@ -33,7 +37,7 @@ function SignIn() {
             placeholder="Enter Your Password"
           ></Input>
           <InputRightElement width={"4.5rem"}>
-            <Button h={"1.75rem"} size={"sm"}>
+            <Button h={"1.75rem"} size={"sm"} onClick={handleClick}>
               {show ? "Hide" : "Show"}
             </Button>
           </InputRightElement>
@@ -64,4 +68,4 @@ function SignIn() {
   );
 }
 
-export default SignIn;
+export default SignUp;

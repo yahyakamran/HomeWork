@@ -10,8 +10,8 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 
-import SignIn from "./SignIn";
-import Login from "./login";
+import SignUp from "./SignUp";
+import Login from "./Login";
 
 function LoginForm() {
   return (
@@ -48,7 +48,7 @@ function LoginForm() {
               <Login />
             </TabPanel>
             <TabPanel>
-              <SignIn />
+              <SignUp />
             </TabPanel>
           </TabPanels>
         </Tabs>
