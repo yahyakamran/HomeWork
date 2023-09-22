@@ -9,8 +9,8 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { getDatabase, ref, set } from "firebase/database";
+import { ref, set } from "firebase/database";
+import { db } from "../config/firebase-config";
 
 function SignUp() {
   const [user, setUser] = useState();
@@ -23,7 +23,6 @@ function SignUp() {
   const [pic, setPic] = useState();
   const [loading, setLoading] = useState();
   const toast = useToast();
-  const database = getDatabase();
 
   const postDetails = (pics) => {
     setLoading(true);
@@ -104,7 +103,7 @@ function SignUp() {
       },
     };
 
-    set(ref(database, "Users/" + rollNo), data)
+    set(ref(db, "Users/" + rollNo), data)
       .then(() => {
         toast({
           title: "Registration Successfull",
