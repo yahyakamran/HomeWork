@@ -34,6 +34,8 @@ function SignUp() {
         isClosable: true,
         position: Button,
       });
+      setLoading(false);
+      return;
     }
 
     if (pics.type === "image/jpeg" || pics.type === "image/png") {
@@ -82,6 +84,7 @@ function SignUp() {
         isClosable: true,
         position: "bottom",
       });
+      setLoading(false);
       return;
     }
     if (password !== confirmPassword) {
@@ -92,6 +95,7 @@ function SignUp() {
         isClosable: true,
         position: "bottom",
       });
+      setLoading(false);
       return;
     }
     const data = {
