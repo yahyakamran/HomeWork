@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { ref, child, get } from "firebase/database";
 import { db } from "../config/firebase-config";
 
@@ -18,6 +18,7 @@ const AppProvider = ({ children }) => {
           setFetchedEmail(res?.user?.email);
           setFetchedPassword(res?.user?.password);
           setData(res);
+          localStorage.setItem("rollNo", rollNo);
         } else {
           console.log("Data not available");
         }
@@ -26,6 +27,7 @@ const AppProvider = ({ children }) => {
         console.error(error);
       });
   };
+
   return (
     <chatContext.Provider
       value={{
