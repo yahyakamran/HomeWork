@@ -30,12 +30,7 @@ function LatestWork() {
         alignItems={"center"}
         justifyContent={"space-between"}
       >
-        <Heading
-          Align={"left"}
-          color={"gray.700"}
-          margin={"14px"}
-          fontSize={"22px"}
-        >
+        <Heading color={"gray.700"} margin={"14px"} fontSize={"22px"}>
           Latest Assignment
         </Heading>
         <Button colorScheme="teal" variant="ghost" onClick={handleFetchData}>
@@ -57,15 +52,18 @@ function LatestWork() {
 
         <Box padding={"8px"}>{`Task No 1 : ${task}`}</Box>
       </Box>
+
       <Box>
-        <Button
-          size="lg"
-          rightIcon={<ArrowForwardIcon />}
-          colorScheme="gray"
-          variant="outline"
-        >
-          Code It!
-        </Button>
+        <a href="https://onecompiler.com/c" target="blank">
+          <Button
+            size="lg"
+            rightIcon={<ArrowForwardIcon />}
+            colorScheme="gray"
+            variant="outline"
+          >
+            Code It!
+          </Button>
+        </a>
       </Box>
     </>
   );
