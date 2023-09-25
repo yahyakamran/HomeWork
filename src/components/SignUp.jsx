@@ -103,7 +103,12 @@ function SignUp() {
         name: name,
         email: email,
         password: password,
-        "picture-url": pic,
+        pictureUrl: pic,
+        rollNo: rollNo,
+      },
+      task: {
+        title: "",
+        link: "",
       },
     };
 

@@ -12,7 +12,7 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import { db } from "../config/firebase-config";
-import { ref, set } from "firebase/database";
+import { ref, set, update } from "firebase/database";
 
 function UploadWork() {
   const [title, setTitle] = useState();
@@ -47,7 +47,7 @@ function UploadWork() {
       },
     };
 
-    set(ref(db, "Uploads/" + rollNo), data)
+    update(ref(db, "Users/" + rollNo), data)
       .then(() => {
         toast({
           title: "Progect Uploaded Succesfull",
