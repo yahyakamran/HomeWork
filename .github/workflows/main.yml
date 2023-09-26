@@ -42,8 +42,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
-      - name: Run worklow
-        env:
-        SOME_TOKEN: ${{ secrets.SOME_TOKEN }}
-        working-directory: ./directory
-        run: run command
