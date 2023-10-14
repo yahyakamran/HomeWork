@@ -54,7 +54,7 @@ function LatestWork() {
       </Box>
 
       <Box>
-        <a href="https://onecompiler.com/c" target="blank">
+        <a href="https://www.online-cpp.com/online_c_compiler" target="blank">
           <Button
             size="lg"
             rightIcon={<ArrowForwardIcon />}
